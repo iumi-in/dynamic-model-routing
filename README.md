@@ -21,6 +21,8 @@ The plugin has no daemon, API proxy, API keys of its own, telemetry endpoint, or
 | Claude Code CLI | Pilot | Strict manifest validation and session loading verified |
 | Cursor and desktop-specific integrations | Roadmap | No support claim until a native adapter is tested |
 
+Independent validation is the current priority. Contributors can verify [Codex routing on Linux](https://github.com/iumi-in/dynamic-model-routing/issues/1), verify [Claude Code loading on macOS](https://github.com/iumi-in/dynamic-model-routing/issues/2), or help collect the [first comparable routing benchmark](https://github.com/iumi-in/dynamic-model-routing/issues/3).
+
 ## Install in 60 seconds
 
 You need an installed, authenticated coding CLI with native skill and subagent support. Loading was checked on Windows with Codex `0.153.4` and Claude Code `2.1.247`; other versions and operating systems still need their own checks. Native worker execution remains unverified here because the test CLI sessions lacked authentication. See [verification evidence](docs/verification.md).

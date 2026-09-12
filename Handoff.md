@@ -20,6 +20,8 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - GitHub reports 100% community-profile health after adding the conduct policy, issue forms, and pull-request template.
 - The repository is pinned on the `iumi-in` profile and has ten relevant discovery topics.
 - Starter issues `#1` and `#2` invite independent Codex/Linux and Claude Code/macOS verification.
+- Issue `#3` tracks the first 20 comparable pilot observations, and the README links all three evidence tasks.
+- `main` blocks force pushes and deletion, requires the Linux, macOS, and Windows validation jobs, and requires pull-request conversations to be resolved. Repository administrators retain an emergency bypass.
 - `assets/social-preview.jpg` is committed and referenced by the README. Uploading it as GitHub's link-preview image still requires an authenticated repository-settings browser session.
 - The original `v0.1.0` tag is preserved. Its attached ZIP was replaced with the corrected portable archive, and `v0.1.1` is the maintained additive patch release.
 
@@ -38,7 +40,7 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 
 ## Next action
 
-Upload `assets/social-preview.jpg` under GitHub repository Settings → General → Social preview when an authenticated browser session is available. Then run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
+Upload `assets/social-preview.jpg` under GitHub repository Settings → General → Social preview when an authenticated browser session is available. Both installed CLIs currently report that they are logged out, so an honest native-worker demo remains blocked on authentication. Then run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
 
 ## Risk and rollback
 
