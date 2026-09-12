@@ -1,23 +1,43 @@
-# Dynamic Model Routing
+<div align="center">
+  <h1>Dynamic Model Routing</h1>
+  <p><strong>Match model strength to task risk.</strong></p>
+  <p>An open-source, local-first routing policy for Codex CLI and Claude Code CLI.</p>
 
-[![Validation](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml/badge.svg)](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  <p>
+    <a href="https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml"><img alt="Validation" src="https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml/badge.svg"></a>
+    <a href="https://github.com/iumi-in/dynamic-model-routing/releases/tag/v0.1.1"><img alt="Release v0.1.1" src="https://img.shields.io/badge/release-v0.1.1-1677ff"></a>
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-00b8a9"></a>
+    <img alt="Codex CLI: pilot" src="https://img.shields.io/badge/Codex_CLI-pilot-1677ff">
+    <img alt="Claude Code CLI: pilot" src="https://img.shields.io/badge/Claude_Code_CLI-pilot-d97757">
+  </p>
 
-<p align="center">
-  <img src="assets/social-preview.jpg" alt="Dynamic Model Routing: risk-aware routing for Codex and Claude Code">
-</p>
+  <img width="100%" src="assets/social-preview.jpg" alt="Dynamic Model Routing: risk-aware routing for Codex and Claude Code">
 
-<p align="center">
-  <a href="output/social/dynamic-model-routing-demo.mp4">Watch the 44-second demo</a>
-</p>
+  <p>
+    <strong><a href="#install-in-60-seconds">Install in 60 seconds</a></strong>
+    · <a href="#watch-the-44-second-demo">Watch the demo</a>
+    · <a href="docs/verification.md">See the evidence</a>
+    · <a href="docs/pilot.md">Join the pilot</a>
+  </p>
+</div>
 
-Route coding tasks to the least expensive model that clears the risk bar, while preserving explicit model choices and verification.
+## Watch the 44-second demo
 
-Dynamic Model Routing is a native pilot plugin for **Codex CLI and Claude Code CLI**, based on the author's original skill. It classifies work as Clerical, Routine, Sensitive, or Escalation, then uses the host's eligible model-aware workers when available.
+https://github.com/user-attachments/assets/ead6c8b4-f684-41f8-99ae-d730094f6000
 
-The plugin has no daemon, API proxy, API keys of its own, telemetry endpoint, or runtime dependency. It does not automatically switch the active coordinator, enforce monetary caps, or promise savings. Python is needed only for repository checks.
+The demo shows the routing decision, both installation paths, and the evidence expected before a route is accepted. The narration was generated locally with the open-source Kokoro-82M model; the [transcript and voice provenance](docs/social-launch.md#video-accessibility) are public.
 
-## Support
+## Why route by risk?
+
+A typo, a dependency update, and an authorization change carry different failure costs. Dynamic Model Routing classifies the next task as **Clerical, Routine, Sensitive, or Escalation**, then recommends the least expensive eligible model that clears the risk bar.
+
+| **Choose by consequence** | **Keep user control** | **Stay local and inspectable** |
+| --- | --- | --- |
+| Risk and uncertainty set the capability floor, even for a one-line change. | Explicit model choices, budgets, execution holds, and verification requirements remain in force. | No daemon, proxy, plugin API key, telemetry endpoint, or runtime dependency. |
+
+The plugin uses native model-aware workers when the host exposes them. It does not automatically switch the active coordinator, enforce monetary caps, or promise savings. Python is needed only for repository checks.
+
+## Current support
 
 | Host | Status | Current evidence |
 | --- | --- | --- |
@@ -75,7 +95,16 @@ Use the skill picker to choose the plugin copy if a standalone skill already has
 
 To remove this installed plugin, use `codex plugin remove dynamic-model-routing@personal`. Remove the catalog with `codex plugin marketplace remove personal` only if you added this exact source and no remaining plugins use it. Native uninstall does not undo changes that Configure made to a consuming project.
 
-## Three modes
+## How routing works
+
+| Route | Typical work | Acceptance bar |
+| --- | --- | --- |
+| **Clerical** | Fully specified documentation or bounded evidence extraction | Coordinator review and relevant existing checks |
+| **Routine** | Ordinary UI, bounded logic, reproducible fixes, and test tooling | Scope-appropriate review and integration checks |
+| **Sensitive** | Security, permissions, privacy, money, deletion, persistence, concurrency, or migrations | Strong eligible model, independent review, and boundary or failure checks |
+| **Escalation** | Difficult defects or conflicting critical findings that survive bounded attempts | Strongest eligible model and independent review against the original acceptance checks |
+
+Choose how much control the plugin receives for the current task:
 
 | Mode | What happens |
 | --- | --- |

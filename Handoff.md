@@ -22,7 +22,8 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - Starter issues `#1` and `#2` invite independent Codex/Linux and Claude Code/macOS verification.
 - Issue `#3` tracks the first 20 comparable pilot observations, and the README links all three evidence tasks.
 - `main` blocks force pushes and deletion, requires the Linux, macOS, and Windows validation jobs, and requires pull-request conversations to be resolved. Repository administrators retain an emergency bypass.
-- `docs/social-launch.md` contains ready-to-post LinkedIn and X copy, accessibility text, the exact narration, and voice provenance. `output/social/dynamic-model-routing-demo.mp4` is a 44-second H.264/AAC demo narrated locally with Kokoro-82M's `af_heart` voice; the matching poster image is unchanged.
+- The README is the project landing page: a centered branded hero, direct install/evidence/pilot actions, an inline 44-second GitHub video player, a concise value proposition, and an at-a-glance routing table. The player uses the media attachment published in issue `#3`; the canonical tracked MP4 remains `output/social/dynamic-model-routing-demo.mp4`.
+- `docs/social-launch.md` contains ready-to-post LinkedIn and X copy, accessibility text, the exact narration, and voice provenance. The demo uses H.264/AAC narration generated locally with Kokoro-82M's `af_heart` voice; the matching poster image is unchanged.
 - `assets/social-preview.jpg` is committed and referenced by the README. Uploading it as GitHub's link-preview image still requires an authenticated repository-settings browser session.
 - The original `v0.1.0` tag is preserved. Its attached ZIP was replaced with the corrected portable archive, and `v0.1.1` is the maintained additive patch release.
 
