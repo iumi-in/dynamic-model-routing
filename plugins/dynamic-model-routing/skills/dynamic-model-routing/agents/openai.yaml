@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dynamic Model Routing"
+  short_description: "Route coding work with native model controls"
+  default_prompt: "Use $dynamic-model-routing to select a route, preserve task constraints, and verify the accepted result."

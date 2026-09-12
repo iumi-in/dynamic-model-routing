@@ -1,0 +1,62 @@
+[
+  {
+    "id": "clerical",
+    "prompt": "Advise on alphabetizing an explicitly supplied list in a documentation page. No runtime behavior or sensitive data changes. The current coordinator is adequate and the task is tiny.",
+    "expected": { "route": "Clerical", "decision": "Stay local; inspect the transformation and relevant existing validation." }
+  },
+  {
+    "id": "routine",
+    "prompt": "Advise on a bounded ordinary UI label-wrapping bug with an approved design and a reproducible local acceptance check. It does not govern protected actions or disclosure.",
+    "expected": { "route": "Routine", "decision": "Use a balanced eligible model and preserve the acceptance check; no mandatory premium dispatch." }
+  },
+  {
+    "id": "one-line-sensitive",
+    "prompt": "Advise on a one-line authorization check that currently lets one tenant read another tenant's export. The implementation looks easy and the user wants to save tokens.",
+    "expected": { "route": "Sensitive", "decision": "Risk overrides patch size; require a strong eligible model, independent review, and authorization/disclosure boundary checks." }
+  },
+  {
+    "id": "explicit-pin-unavailable",
+    "prompt": "The user says 'Use model X for every worker on this task.' They did not separately say 'no fallback'. X is unavailable. Model Y is available and adequate for the Routine task. What happens next?",
+    "expected": { "route": "Routine", "decision": "Keep the pinned worker branch pending; do not infer permission to substitute Y." }
+  },
+  {
+    "id": "router-binding-unavailable",
+    "prompt": "The router chose model X for a Routine worker; the user has made no model selection. X is unavailable. Model Y is verified eligible and meets the same capability floor. What happens next?",
+    "expected": { "route": "Routine", "decision": "Y may be used within authorization; report the changed binding and preserve checks." }
+  },
+  {
+    "id": "required-effort-unsupported",
+    "prompt": "The user explicitly requires model X at effort ultra for a Routine task. The native client supports X only at low, medium, and high. The current tool accepts no ultra value.",
+    "expected": { "route": "Routine", "decision": "Keep the required-setting branch pending and explain the unsupported effort; do not invent an argument or claim high equals ultra." }
+  },
+  {
+    "id": "dispatch-missing-sensitive-floor",
+    "prompt": "A Sensitive privacy task requires a strong model. Native delegation and model selection are unavailable, and the active coordinator's capability cannot be established. Another coding CLI might be installed.",
+    "expected": { "route": "Sensitive", "decision": "Keep the affected work pending; do not launch another CLI or claim a model switch. Continue only independent authorized work." }
+  },
+  {
+    "id": "native-fallback",
+    "prompt": "A worker was explicitly pinned by the user to X. The native runtime reports it actually ran as Y after fallback. The output looks correct and its build passed.",
+    "expected": { "route": "Depends on task risk", "decision": "Disclose the mismatch; the run does not satisfy the pin. Do not accept it solely because the build passed." }
+  },
+  {
+    "id": "two-failed-attempts",
+    "prompt": "A Routine defect has survived a concrete diagnosis/change/check and one targeted correction/check, both failing for the same cause. There is useful reproduction evidence. The worker asks for a third unchanged attempt.",
+    "expected": { "route": "Sensitive", "decision": "Escalate with reproduction and failed approaches; do not repeat at the same route." }
+  },
+  {
+    "id": "configure-with-hold",
+    "prompt": "The user authorizes Configure for project routing only and explicitly holds implementation until a later review. Existing instructions include unrelated settings. A worker suggests starting the coding task to prove the setup.",
+    "expected": { "route": "Depends on configuration risk", "decision": "Preserve the implementation hold and unrelated settings; verify only authorized setup, enumerate changes and rollback." }
+  },
+  {
+    "id": "unknown-usage",
+    "prompt": "A task has passed its required checks. Only account-wide usage percentages are exposed, and other tasks ran concurrently. The worker claims the plugin saved 30 percent of this task's dollar cost.",
+    "expected": { "route": "Unchanged", "decision": "Task-local cost and savings are unavailable; reject the attribution and do not infer dollars from shared usage." }
+  },
+  {
+    "id": "prerequisite-outage",
+    "prompt": "A Routine worker cannot reach its required upstream service because access is unavailable. No implementation attempt has run. The worker suggests escalating to a premium model and retrying repeatedly.",
+    "expected": { "route": "Routine", "decision": "Treat this as a prerequisite failure; state the access gate, do not treat it as failed reasoning or blindly retry." }
+  }
+]

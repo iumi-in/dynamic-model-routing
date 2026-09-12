@@ -1,0 +1,20 @@
+{
+  "name": "dynamic-model-routing",
+  "version": "0.1.0",
+  "description": "Native task routing with risk-aware model choices, bounded escalation, and verified results.",
+  "author": {
+    "name": "Dynamic Model Routing contributors"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dynamic Model Routing",
+    "shortDescription": "Match coding work to capable native models.",
+    "longDescription": "Apply a shared routing policy, preserve explicit choices, limit retries, and distinguish requested models from runtime evidence.",
+    "developerName": "Dynamic Model Routing contributors",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://github.com/iumi-in/dynamic-model-routing",
+    "defaultPrompt": "Use $dynamic-model-routing to advise on the next task's route and acceptance checks."
+  }
+}
