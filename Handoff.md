@@ -17,6 +17,10 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - Distribution archive: `output/plugins/dynamic-model-routing-0.1.1.zip`.
 - Archive SHA-256: `9AC11AFEE8CCBFC2B26D5475C65D1B34F58B807F10A4D7FC10690FDDF83AD7E2`.
 - Issues and private vulnerability reporting are enabled; the wiki is disabled.
+- GitHub reports 100% community-profile health after adding the conduct policy, issue forms, and pull-request template.
+- The repository is pinned on the `iumi-in` profile and has ten relevant discovery topics.
+- Starter issues `#1` and `#2` invite independent Codex/Linux and Claude Code/macOS verification.
+- `assets/social-preview.jpg` is committed and referenced by the README. Uploading it as GitHub's link-preview image still requires an authenticated repository-settings browser session.
 - The original `v0.1.0` tag is preserved. Its attached ZIP was replaced with the corrected portable archive, and `v0.1.1` is the maintained additive patch release.
 
 ## Verification
@@ -27,13 +31,14 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - The archive has seven contained entries and matches package source byte for byte.
 - `python -B scripts/package.py` reproduces the checked-in archive byte for byte.
 - GitHub Actions run `34692122950` passes on Linux, macOS, and Windows for release commit `69ca925`.
+- GitHub Actions run `34693076367` passes on Linux, macOS, and Windows for community-foundation commit `65f6813`.
 - The release validator rejects unexpected package files and trust-expanding manifest fields.
 - Codex isolated installation/discovery/removal and Claude session loading passed previously.
 - Authenticated native worker execution, effective-model identity, adoption, and savings remain unverified.
 
 ## Next action
 
-Run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
+Upload `assets/social-preview.jpg` under GitHub repository Settings → General → Social preview when an authenticated browser session is available. Then run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
 
 ## Risk and rollback
 
