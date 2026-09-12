@@ -8,7 +8,7 @@ from validate import EXPECTED_FILES, validate
 
 REPOSITORY = Path(__file__).resolve().parents[1]
 DEFAULT_ROOT = REPOSITORY / "plugins/dynamic-model-routing"
-DEFAULT_OUTPUT = REPOSITORY / "output/plugins/dynamic-model-routing-0.1.0.zip"
+DEFAULT_OUTPUT = REPOSITORY / "output/plugins/dynamic-model-routing-0.1.1.zip"
 ARCHIVE_TIMESTAMP = (2026, 9, 12, 0, 0, 0)
 
 

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts/validate.py"
 PACKAGE_SCRIPT = ROOT / "scripts/package.py"
 PACKAGE = ROOT / "plugins/dynamic-model-routing"
-ARCHIVE = ROOT / "output/plugins/dynamic-model-routing-0.1.0.zip"
+ARCHIVE = ROOT / "output/plugins/dynamic-model-routing-0.1.1.zip"
 MARKETPLACE = ROOT / ".agents/plugins/marketplace.json"
 
 
@@ -53,7 +53,7 @@ class PackageValidationTests(unittest.TestCase):
             with self.subTest(key=key):
                 self.change_manifest("claude", key, value)
                 self.assertTrue(self.errors())
-                self.change_manifest("claude", key, PACKAGE.name if key == "name" else "0.1.0")
+                self.change_manifest("claude", key, PACKAGE.name if key == "name" else "0.1.1")
 
     def test_rejects_non_object_or_malformed_manifest(self):
         path = self.root / ".claude-plugin/plugin.json"

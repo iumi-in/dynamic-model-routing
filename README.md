@@ -3,7 +3,7 @@
 [![Validation](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml/badge.svg)](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A small native routing plugin for **Codex CLI and Claude Code CLI**, based on the author's original Dynamic Model Routing skill. Version `0.1.0` is a pilot: it selects routes, uses the host's model-aware workers when available, preserves explicit choices, and requires evidence before accepting results.
+A small native routing plugin for **Codex CLI and Claude Code CLI**, based on the author's original Dynamic Model Routing skill. Version `0.1.1` is a pilot: it selects routes, uses the host's model-aware workers when available, preserves explicit choices, and requires evidence before accepting results.
 
 The plugin has no daemon, API proxy, API keys of its own, telemetry endpoint, or runtime dependency. It does not automatically switch the active coordinator, enforce monetary caps, or promise savings. Python is needed only for repository checks.
 
@@ -79,10 +79,10 @@ python -m unittest discover -s tests -v
 
 The validator checks package consistency, contained inline references, portable metadata, and accidental coordinator overrides. The package uses simple inline Markdown links; reference-style definitions are rejected. This is a package check, not a general Markdown security scanner or proof that the agent follows the policy. Use the [behavioral scenarios](tests/scenarios.json), [native-check evidence](docs/verification.md), and [two-week pilot guide](docs/pilot.md) for the remaining layers.
 
-Proceed to real work only after the consuming session demonstrates a harmless native worker and the required identity/acceptance evidence. Cursor, desktop integrations, cross-CLI handoff, and economic benchmarks remain deferred until the pilot justifies them. Public `0.1.0` is an evidence-seeking pilot, not proof of savings or broad platform support. The [demand research](docs/research/2026-09-12-demand-and-relevance.md) explains the decision.
+Proceed to real work only after the consuming session demonstrates a harmless native worker and the required identity/acceptance evidence. Cursor, desktop integrations, cross-CLI handoff, and economic benchmarks remain deferred until the pilot justifies them. Public `0.1.1` is an evidence-seeking pilot, not proof of savings or broad platform support. The [demand research](docs/research/2026-09-12-demand-and-relevance.md) explains the decision.
 
 ## Package and license
 
-The distributable is `plugins/dynamic-model-routing`, also packaged as [a reproducible ZIP](output/plugins/dynamic-model-routing-0.1.0.zip). Extract the ZIP into a directory named `dynamic-model-routing`; it contains the plugin files at archive root. Both manifests discover the same skill; `agents/openai.yaml` is Codex skill metadata, not a custom worker definition. Host instructions live beside the shared skill. The author's installed original remains unchanged.
+The distributable is `plugins/dynamic-model-routing`, also packaged as [a reproducible ZIP](output/plugins/dynamic-model-routing-0.1.1.zip). Extract the ZIP into a directory named `dynamic-model-routing`; it contains the plugin files at archive root. Both manifests discover the same skill; `agents/openai.yaml` is Codex skill metadata, not a custom worker definition. Host instructions live beside the shared skill. The author's installed original remains unchanged.
 
 Plugin and implementation code are available under the [MIT license](LICENSE). The software is provided as-is, without warranty, and the authors and copyright holders disclaim liability to the maximum extent permitted by applicable law. No adoption figures, measured savings, or tested support beyond the evidence above is claimed. Security reports should follow [the security policy](SECURITY.md); contributions should follow [the contribution guide](CONTRIBUTING.md).

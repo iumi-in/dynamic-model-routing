@@ -1,6 +1,6 @@
 {
   "name": "dynamic-model-routing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native task routing with risk-aware model choices, bounded escalation, and verified results.",
   "author": {
     "name": "Dynamic Model Routing contributors"

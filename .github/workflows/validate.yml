@@ -24,7 +24,7 @@ jobs:
       - name: Rebuild distribution archive
         run: python -B scripts/package.py
       - name: Check reproducible archive
-        run: git diff --exit-code -- output/plugins/dynamic-model-routing-0.1.0.zip
+        run: git diff --exit-code -- output/plugins/dynamic-model-routing-0.1.1.zip
       - name: Validate package
         run: python -B scripts/validate.py
       - name: Run regression tests
