@@ -1,0 +1,62 @@
+name: Bug report
+description: Report reproducible behavior that differs from the documented plugin contract.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a problem. Remove credentials, private prompts, and proprietary source before submitting.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for the same behavior.
+          required: true
+        - label: I removed secrets and private project content.
+          required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host
+      options:
+        - Codex CLI
+        - Claude Code CLI
+        - Package validator or archive
+        - Other or unsupported host
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Host and plugin versions
+      placeholder: "Codex 0.x / Claude Code 2.x; plugin 0.1.1"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and shell
+      placeholder: "Windows 11 / PowerShell 7"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the mode, sanitized task, commands, and the smallest sequence that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and sanitized evidence
+    validations:
+      required: true

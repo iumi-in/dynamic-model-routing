@@ -3,11 +3,25 @@
 [![Validation](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml/badge.svg)](https://github.com/iumi-in/dynamic-model-routing/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A small native routing plugin for **Codex CLI and Claude Code CLI**, based on the author's original Dynamic Model Routing skill. Version `0.1.1` is a pilot: it selects routes, uses the host's model-aware workers when available, preserves explicit choices, and requires evidence before accepting results.
+<p align="center">
+  <img src="assets/social-preview.jpg" alt="Dynamic Model Routing: risk-aware routing for Codex and Claude Code">
+</p>
+
+Route coding tasks to the least expensive model that clears the risk bar, while preserving explicit model choices and verification.
+
+Dynamic Model Routing is a native pilot plugin for **Codex CLI and Claude Code CLI**, based on the author's original skill. It classifies work as Clerical, Routine, Sensitive, or Escalation, then uses the host's eligible model-aware workers when available.
 
 The plugin has no daemon, API proxy, API keys of its own, telemetry endpoint, or runtime dependency. It does not automatically switch the active coordinator, enforce monetary caps, or promise savings. Python is needed only for repository checks.
 
-## Try it
+## Support
+
+| Host | Status | Current evidence |
+| --- | --- | --- |
+| Codex CLI | Pilot | Installation, discovery, and removal verified |
+| Claude Code CLI | Pilot | Strict manifest validation and session loading verified |
+| Cursor and desktop-specific integrations | Roadmap | No support claim until a native adapter is tested |
+
+## Install in 60 seconds
 
 You need an installed, authenticated coding CLI with native skill and subagent support. Loading was checked on Windows with Codex `0.153.4` and Claude Code `2.1.247`; other versions and operating systems still need their own checks. Native worker execution remains unverified here because the test CLI sessions lacked authentication. See [verification evidence](docs/verification.md).
 

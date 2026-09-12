@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a user need that the smallest safe change could address.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: Describe the problem before proposing machinery. New hosts, runtime components, credential access, or telemetry require evidence that the instruction-only package cannot meet the need.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who is blocked, what are they trying to do, and what observable outcome is missing?
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current workaround
+      description: Explain how users handle this today and why that is insufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Smallest proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Acceptance evidence
+      description: State how maintainers and users can verify that the change works without weakening authorization or review gates.
+    validations:
+      required: true
