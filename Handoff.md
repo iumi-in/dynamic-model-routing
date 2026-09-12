@@ -22,7 +22,7 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - Starter issues `#1` and `#2` invite independent Codex/Linux and Claude Code/macOS verification.
 - Issue `#3` tracks the first 20 comparable pilot observations, and the README links all three evidence tasks.
 - `main` blocks force pushes and deletion, requires the Linux, macOS, and Windows validation jobs, and requires pull-request conversations to be resolved. Repository administrators retain an emergency bypass.
-- `docs/social-launch.md` contains ready-to-post LinkedIn and X copy, accessibility text, and the exact narration. `output/social/dynamic-model-routing-demo.mp4` is a 44-second narrated H.264/AAC demo with a matching poster image.
+- `docs/social-launch.md` contains ready-to-post LinkedIn and X copy, accessibility text, the exact narration, and voice provenance. `output/social/dynamic-model-routing-demo.mp4` is a 44-second H.264/AAC demo narrated locally with Kokoro-82M's `af_heart` voice; the matching poster image is unchanged.
 - `assets/social-preview.jpg` is committed and referenced by the README. Uploading it as GitHub's link-preview image still requires an authenticated repository-settings browser session.
 - The original `v0.1.0` tag is preserved. Its attached ZIP was replaced with the corrected portable archive, and `v0.1.1` is the maintained additive patch release.
 
@@ -33,6 +33,7 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - `claude plugin validate ./plugins/dynamic-model-routing --strict` passes.
 - The archive has seven contained entries and matches package source byte for byte.
 - `python -B scripts/package.py` reproduces the checked-in archive byte for byte.
+- FFmpeg decodes the revised 44.00-second demo without errors. Its mono AAC narration is 48 kHz, measures -16.6 LUFS integrated, and peaks at -1.5 dBFS.
 - GitHub Actions run `34692122950` passes on Linux, macOS, and Windows for release commit `69ca925`.
 - GitHub Actions run `34693076367` passes on Linux, macOS, and Windows for community-foundation commit `65f6813`.
 - The release validator rejects unexpected package files and trust-expanding manifest fields.
