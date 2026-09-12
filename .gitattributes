@@ -7,5 +7,6 @@ LICENSE text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf
 *.jpg binary
+*.mp4 binary
 *.pdf binary
 *.zip binary

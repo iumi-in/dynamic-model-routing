@@ -7,6 +7,10 @@
   <img src="assets/social-preview.jpg" alt="Dynamic Model Routing: risk-aware routing for Codex and Claude Code">
 </p>
 
+<p align="center">
+  <a href="output/social/dynamic-model-routing-demo.mp4">Watch the 44-second demo</a>
+</p>
+
 Route coding tasks to the least expensive model that clears the risk bar, while preserving explicit model choices and verification.
 
 Dynamic Model Routing is a native pilot plugin for **Codex CLI and Claude Code CLI**, based on the author's original skill. It classifies work as Clerical, Routine, Sensitive, or Escalation, then uses the host's eligible model-aware workers when available.

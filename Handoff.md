@@ -22,6 +22,7 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 - Starter issues `#1` and `#2` invite independent Codex/Linux and Claude Code/macOS verification.
 - Issue `#3` tracks the first 20 comparable pilot observations, and the README links all three evidence tasks.
 - `main` blocks force pushes and deletion, requires the Linux, macOS, and Windows validation jobs, and requires pull-request conversations to be resolved. Repository administrators retain an emergency bypass.
+- `docs/social-launch.md` contains ready-to-post LinkedIn and X copy, accessibility text, and the exact narration. `output/social/dynamic-model-routing-demo.mp4` is a 44-second narrated H.264/AAC demo with a matching poster image.
 - `assets/social-preview.jpg` is committed and referenced by the README. Uploading it as GitHub's link-preview image still requires an authenticated repository-settings browser session.
 - The original `v0.1.0` tag is preserved. Its attached ZIP was replaced with the corrected portable archive, and `v0.1.1` is the maintained additive patch release.
 
@@ -40,7 +41,7 @@ Cursor and desktop-specific adapters remain deferred. The plugin does not provid
 
 ## Next action
 
-Upload `assets/social-preview.jpg` under GitHub repository Settings → General → Social preview when an authenticated browser session is available. Both installed CLIs currently report that they are logged out, so an honest native-worker demo remains blocked on authentication. Then run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
+Publish the prepared LinkedIn and X copy with the MP4 attached, and upload `assets/social-preview.jpg` under GitHub repository Settings → General → Social preview when authenticated browser sessions are available. Both installed CLIs currently report that they are logged out, so an honest native-worker execution demo remains blocked on authentication. Then run the documented two-week pilot and record native worker identity, route overrides, acceptance failures, latency, and cost evidence. Do not claim Cursor support, desktop-specific verification, native worker identity, adoption, or savings until measured.
 
 ## Risk and rollback
 
